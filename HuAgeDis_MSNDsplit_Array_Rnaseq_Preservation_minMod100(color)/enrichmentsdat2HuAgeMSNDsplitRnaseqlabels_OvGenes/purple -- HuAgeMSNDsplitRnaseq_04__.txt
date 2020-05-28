@@ -1,0 +1,6 @@
+"","purple....HuAgeMSNDsplitRnaseq_04__"
+"1","CA12"
+"2","CRB1"
+"3","DNALI1"
+"4","GMPR"
+"5","MASP1"

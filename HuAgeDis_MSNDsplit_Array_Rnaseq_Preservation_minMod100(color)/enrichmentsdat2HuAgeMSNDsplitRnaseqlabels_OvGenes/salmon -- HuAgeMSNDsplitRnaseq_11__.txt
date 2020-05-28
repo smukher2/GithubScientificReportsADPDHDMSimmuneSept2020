@@ -1,0 +1,4 @@
+"","salmon....HuAgeMSNDsplitRnaseq_11__"
+"1","DUSP12"
+"2","MTRR"
+"3","TRIP4"

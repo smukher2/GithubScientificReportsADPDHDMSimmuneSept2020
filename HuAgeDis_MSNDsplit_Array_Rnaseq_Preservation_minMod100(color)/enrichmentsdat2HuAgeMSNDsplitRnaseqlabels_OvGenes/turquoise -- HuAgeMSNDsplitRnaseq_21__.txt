@@ -1,0 +1,6 @@
+"","turquoise....HuAgeMSNDsplitRnaseq_21__"
+"1","AURKC"
+"2","CHRNG"
+"3","DLX4"
+"4","EPB41L4A"
+"5","TCN1"

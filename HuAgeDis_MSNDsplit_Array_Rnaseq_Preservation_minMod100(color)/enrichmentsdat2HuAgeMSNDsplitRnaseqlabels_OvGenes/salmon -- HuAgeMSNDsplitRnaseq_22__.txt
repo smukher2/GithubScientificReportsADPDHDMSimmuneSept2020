@@ -1,0 +1,3 @@
+"","salmon....HuAgeMSNDsplitRnaseq_22__"
+"1","RAI14"
+"2","ZNF189"

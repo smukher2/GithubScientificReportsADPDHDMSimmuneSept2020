@@ -1,0 +1,8 @@
+"","black....HuAgeMSNDsplitRnaseq_07__"
+"1","CRYL1"
+"2","DCTN6"
+"3","ETFA"
+"4","NDP"
+"5","ODC1"
+"6","S100A13"
+"7","SGCE"

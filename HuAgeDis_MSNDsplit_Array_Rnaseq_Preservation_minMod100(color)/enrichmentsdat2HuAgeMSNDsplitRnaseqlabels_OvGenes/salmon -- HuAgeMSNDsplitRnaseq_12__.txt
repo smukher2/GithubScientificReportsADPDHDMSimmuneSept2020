@@ -1,0 +1,8 @@
+"","salmon....HuAgeMSNDsplitRnaseq_12__"
+"1","AAAS"
+"2","BCAT2"
+"3","EFNB2"
+"4","FYCO1"
+"5","JUP"
+"6","MTHFR"
+"7","PELI1"

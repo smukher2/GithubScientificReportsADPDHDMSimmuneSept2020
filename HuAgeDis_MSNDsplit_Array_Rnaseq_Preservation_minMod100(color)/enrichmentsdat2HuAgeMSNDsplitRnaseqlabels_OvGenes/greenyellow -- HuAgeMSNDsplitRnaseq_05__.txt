@@ -1,0 +1,8 @@
+"","greenyellow....HuAgeMSNDsplitRnaseq_05__"
+"1","ADAMTS13"
+"2","COLQ"
+"3","EZH1"
+"4","GAS8"
+"5","PHKG2"
+"6","SREBF1"
+"7","ZYX"

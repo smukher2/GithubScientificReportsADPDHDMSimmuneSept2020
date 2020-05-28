@@ -1,0 +1,8 @@
+"","salmon....HuAgeMSNDsplitRnaseq_03__"
+"1","ATRX"
+"2","AVIL"
+"3","EP300"
+"4","NAP1L1"
+"5","PLAG1"
+"6","PUM2"
+"7","SGPL1"

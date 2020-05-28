@@ -1,0 +1,6 @@
+"","purple....HuAgeMSNDsplitRnaseq_03__"
+"1","ABLIM1"
+"2","FYN"
+"3","PELI2"
+"4","SRP14"
+"5","TSPAN31"

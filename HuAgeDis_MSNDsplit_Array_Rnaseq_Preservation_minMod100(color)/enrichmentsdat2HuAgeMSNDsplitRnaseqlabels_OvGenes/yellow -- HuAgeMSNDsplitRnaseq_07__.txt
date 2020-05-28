@@ -1,0 +1,4 @@
+"","yellow....HuAgeMSNDsplitRnaseq_07__"
+"1","CSTB"
+"2","PLTP"
+"3","STK17B"

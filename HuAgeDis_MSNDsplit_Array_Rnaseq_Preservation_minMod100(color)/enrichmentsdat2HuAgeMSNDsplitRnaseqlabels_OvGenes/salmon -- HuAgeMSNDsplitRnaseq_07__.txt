@@ -1,0 +1,5 @@
+"","salmon....HuAgeMSNDsplitRnaseq_07__"
+"1","CTDSP2"
+"2","CYP2J2"
+"3","SALL1"
+"4","TPP1"

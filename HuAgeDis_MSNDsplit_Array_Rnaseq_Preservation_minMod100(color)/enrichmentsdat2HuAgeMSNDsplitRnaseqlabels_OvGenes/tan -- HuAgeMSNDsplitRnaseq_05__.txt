@@ -1,0 +1,8 @@
+"","tan....HuAgeMSNDsplitRnaseq_05__"
+"1","ADSS"
+"2","CAPZA2"
+"3","LAMP1"
+"4","MTMR4"
+"5","NCOA2"
+"6","PTPN3"
+"7","SEC23A"

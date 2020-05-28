@@ -1,0 +1,8 @@
+"","salmon....HuAgeMSNDsplitRnaseq_09__"
+"1","AMD1"
+"2","BACH2"
+"3","IGF1R"
+"4","IRF2"
+"5","PTPRK"
+"6","ST3GAL2"
+"7","ZNF302"
