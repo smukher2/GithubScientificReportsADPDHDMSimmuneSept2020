@@ -1,0 +1,8 @@
+"","HuAgeMSNDsplit_08....PreOligoByothers_Zhang_Cuffdiff2FCover20__"
+"1","COL3A1"
+"2","FBLN2"
+"3","ITIH2"
+"4","LUM"
+"5","POSTN"
+"6","SLC22A6"
+"7","SLC6A13"

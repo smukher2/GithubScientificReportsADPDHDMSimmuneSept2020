@@ -1,0 +1,6 @@
+"","HuAgeMSNDsplit_09....MicroByMacro_Zhang_Cuffdiff2FCover20__"
+"1","FSCN1"
+"2","GAS6"
+"3","JAG2"
+"4","MPP2"
+"5","SNCG"

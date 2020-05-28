@@ -1,0 +1,7 @@
+"","blue....MyeOligoByothers_Zhang_Cuffdiff2FCover20__"
+"1","C12orf29"
+"2","EPHB1"
+"3","GRB14"
+"4","MKRN2"
+"5","PKD2L1"
+"6","POC1A"

@@ -1,0 +1,8 @@
+"","midnightblue....MacroByMicro_Zhang_Cuffdiff2FCover20__"
+"1","DOK2"
+"2","EMP1"
+"3","FABP5"
+"4","LDLR"
+"5","P4HA2"
+"6","SDSL"
+"7","THBS1"

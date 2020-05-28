@@ -1,0 +1,5 @@
+"","HuAgeMSNDsplitRnaseq_01....aNP_BY_qRP_ThanTrong_up__"
+"1","ALKBH2"
+"2","PALM3"
+"3","RELL2"
+"4","SPTB"

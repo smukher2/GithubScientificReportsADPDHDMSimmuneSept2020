@@ -1,0 +1,6 @@
+"","salmon....MSbyO_FC1.25__"
+"1","MYH9"
+"2","PARP4"
+"3","SALL1"
+"4","SIRT1"
+"5","SMAD4"

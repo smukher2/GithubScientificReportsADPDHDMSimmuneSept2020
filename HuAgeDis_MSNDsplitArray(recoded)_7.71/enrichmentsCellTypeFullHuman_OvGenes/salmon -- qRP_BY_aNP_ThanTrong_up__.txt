@@ -1,0 +1,4 @@
+"","salmon....qRP_BY_aNP_ThanTrong_up__"
+"1","NPAS3"
+"2","SGPL1"
+"3","TPP1"

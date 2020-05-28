@@ -1,0 +1,6 @@
+"","red....endoBYoFC5__"
+"1","CA4"
+"2","CD248"
+"3","LIPA"
+"4","SEMA3G"
+"5","SLCO1A2"

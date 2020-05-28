@@ -1,0 +1,7 @@
+"","HuAgeMSNDsplitRnaseq_10....AstroByothers_Zhang_Cuffdiff2FCover20__"
+"1","C4A"
+"2","EVC2"
+"3","KLRC1"
+"4","NUP107"
+"5","PLA2G3"
+"6","SLC7A11"

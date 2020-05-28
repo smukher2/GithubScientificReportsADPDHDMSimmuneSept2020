@@ -1,0 +1,7 @@
+"","HuAgeMSNDsplitRnaseq_08....NewOligoByothers_Zhang_Cuffdiff2FCover20__"
+"1","BCAS1"
+"2","CCP110"
+"3","CHST3"
+"4","FRYL"
+"5","MYRF"
+"6","QDPR"

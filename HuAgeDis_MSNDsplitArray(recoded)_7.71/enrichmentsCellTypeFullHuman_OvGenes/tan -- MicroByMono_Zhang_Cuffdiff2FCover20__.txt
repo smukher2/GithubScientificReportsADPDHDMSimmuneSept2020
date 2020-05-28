@@ -1,0 +1,5 @@
+"","tan....MicroByMono_Zhang_Cuffdiff2FCover20__"
+"1","ANK2"
+"2","CDK5R1"
+"3","GRIA1"
+"4","LGMN"

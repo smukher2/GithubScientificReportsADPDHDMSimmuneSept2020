@@ -1,0 +1,7 @@
+"","green....monocytesBYoFC5__"
+"1","ADAM8"
+"2","DHCR24"
+"3","KIF23"
+"4","LAT"
+"5","MEFV"
+"6","TRAF1"

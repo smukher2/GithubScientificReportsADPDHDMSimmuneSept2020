@@ -1,0 +1,8 @@
+"","HuAgeMSNDsplitRnaseq_22....astroBYoFC5__"
+"1","FAM13C"
+"2","HEY1"
+"3","HEYL"
+"4","KIAA1324L"
+"5","MPC1"
+"6","TMC7"
+"7","TRIM62"

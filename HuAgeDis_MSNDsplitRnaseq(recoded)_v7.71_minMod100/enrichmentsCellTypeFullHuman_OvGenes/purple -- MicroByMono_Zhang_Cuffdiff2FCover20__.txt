@@ -1,0 +1,7 @@
+"","purple....MicroByMono_Zhang_Cuffdiff2FCover20__"
+"1","ABCC6"
+"2","FAM149A"
+"3","FKBP14"
+"4","FZD6"
+"5","PGBD1"
+"6","SLC46A1"

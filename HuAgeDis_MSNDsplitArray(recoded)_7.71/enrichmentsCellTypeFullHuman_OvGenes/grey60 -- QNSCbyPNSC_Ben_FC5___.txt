@@ -1,0 +1,7 @@
+"","grey60....QNSCbyPNSC_Ben_FC5___"
+"1","AQP4"
+"2","ATP2B4"
+"3","FEZ2"
+"4","KCNK10"
+"5","PRPH"
+"6","SCP2"

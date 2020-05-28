@@ -1,0 +1,5 @@
+"","HuAgeMSNDsplitRnaseq_03....NewOligoByothers_Zhang_Cuffdiff2FCover20__"
+"1","CCDC106"
+"2","FASTK"
+"3","FYN"
+"4","PUM2"

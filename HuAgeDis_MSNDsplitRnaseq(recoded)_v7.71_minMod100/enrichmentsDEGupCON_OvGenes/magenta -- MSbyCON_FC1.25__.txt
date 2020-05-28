@@ -1,0 +1,5 @@
+"","magenta....MSbyCON_FC1.25__"
+"1","CTNNBIP1"
+"2","KCNK1"
+"3","SLC35E3"
+"4","ST3GAL4"

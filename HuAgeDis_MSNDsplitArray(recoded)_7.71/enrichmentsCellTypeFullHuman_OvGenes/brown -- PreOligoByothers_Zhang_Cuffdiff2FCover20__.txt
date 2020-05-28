@@ -1,0 +1,7 @@
+"","brown....PreOligoByothers_Zhang_Cuffdiff2FCover20__"
+"1","CA11"
+"2","COPA"
+"3","CSRP2"
+"4","EPHB6"
+"5","MYO5A"
+"6","PRKAR2B"

@@ -1,0 +1,5 @@
+"","green....myeoligoBYoFC5__"
+"1","HAPLN2"
+"2","HCN2"
+"3","PHLDA3"
+"4","PLEKHB1"

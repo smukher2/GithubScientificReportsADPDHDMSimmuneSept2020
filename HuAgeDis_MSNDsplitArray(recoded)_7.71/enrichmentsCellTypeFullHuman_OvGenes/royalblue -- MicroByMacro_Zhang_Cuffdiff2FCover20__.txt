@@ -1,0 +1,8 @@
+"","royalblue....MicroByMacro_Zhang_Cuffdiff2FCover20__"
+"1","ATP1A2"
+"2","CHST7"
+"3","CLU"
+"4","GATM"
+"5","SERPINE2"
+"6","SLC1A4"
+"7","SLCO1C1"

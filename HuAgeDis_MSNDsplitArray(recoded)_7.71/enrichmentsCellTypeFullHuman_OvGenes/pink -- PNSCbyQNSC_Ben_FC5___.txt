@@ -1,0 +1,8 @@
+"","pink....PNSCbyQNSC_Ben_FC5___"
+"1","ADAM12"
+"2","FBLN2"
+"3","FMO1"
+"4","IGFBP5"
+"5","LAMA2"
+"6","MUC4"
+"7","PTGDS"

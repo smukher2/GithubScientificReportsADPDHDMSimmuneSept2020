@@ -1,0 +1,7 @@
+"","HuAgeMSNDsplitRnaseq_07....aRG_BY_qRG_ThanTrong_up__"
+"1","DHFR2"
+"2","LFNG"
+"3","NIN"
+"4","SMO"
+"5","TFDP2"
+"6","WIF1"

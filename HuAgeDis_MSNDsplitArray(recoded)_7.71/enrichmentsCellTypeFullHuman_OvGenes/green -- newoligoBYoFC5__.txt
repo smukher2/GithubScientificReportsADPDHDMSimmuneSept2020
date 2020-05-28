@@ -1,0 +1,8 @@
+"","green....newoligoBYoFC5__"
+"1","BRCA1"
+"2","CPOX"
+"3","CYP27A1"
+"4","NKX2-2"
+"5","PLXNB3"
+"6","SEMA4D"
+"7","TYRO3"

@@ -1,0 +1,6 @@
+"","HuAgeMSNDsplitRnaseq_15....MyeOligoByothers_Zhang_Cuffdiff2FCover20__"
+"1","DDX55"
+"2","OSBPL1A"
+"3","PPME1"
+"4","SURF4"
+"5","TRAPPC4"

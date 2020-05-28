@@ -1,0 +1,6 @@
+"","HuAgeMSNDsplit_09....MicroByMono_Zhang_Cuffdiff2FCover20__"
+"1","FSCN1"
+"2","GAS6"
+"3","PCDHGB6"
+"4","PCDHGC3"
+"5","POU3F1"

@@ -1,0 +1,6 @@
+"","turquoise....ADbyCON_FC1.25__"
+"1","AFM"
+"2","CD36"
+"3","IL6"
+"4","SI"
+"5","TTR"

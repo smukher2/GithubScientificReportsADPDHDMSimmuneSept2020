@@ -1,0 +1,6 @@
+"","lightcyan....QSVZbyPSVZ_Morizur_FC5___"
+"1","CRYAB"
+"2","HSPA1A"
+"3","IRS1"
+"4","PLOD1"
+"5","SGCB"

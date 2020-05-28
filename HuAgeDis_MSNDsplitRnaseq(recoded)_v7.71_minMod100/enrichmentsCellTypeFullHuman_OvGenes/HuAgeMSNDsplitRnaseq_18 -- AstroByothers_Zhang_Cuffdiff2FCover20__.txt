@@ -1,0 +1,8 @@
+"","HuAgeMSNDsplitRnaseq_18....AstroByothers_Zhang_Cuffdiff2FCover20__"
+"1","A2M"
+"2","CTNND1"
+"3","FZD10"
+"4","HYAL1"
+"5","MCF2L"
+"6","MYLK2"
+"7","STARD8"

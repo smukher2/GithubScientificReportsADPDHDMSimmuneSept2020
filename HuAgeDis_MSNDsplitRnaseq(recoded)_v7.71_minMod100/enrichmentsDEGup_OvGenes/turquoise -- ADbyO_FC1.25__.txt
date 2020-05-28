@@ -1,0 +1,5 @@
+"","turquoise....ADbyO_FC1.25__"
+"1","CD44"
+"2","FKBP5"
+"3","MAFF"
+"4","SLC38A2"

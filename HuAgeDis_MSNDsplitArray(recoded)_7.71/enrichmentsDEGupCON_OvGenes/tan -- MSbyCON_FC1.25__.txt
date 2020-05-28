@@ -1,0 +1,7 @@
+"","tan....MSbyCON_FC1.25__"
+"1","CDKN3"
+"2","CIDEA"
+"3","NPY5R"
+"4","PTP4A1"
+"5","SYN2"
+"6","TRPC3"

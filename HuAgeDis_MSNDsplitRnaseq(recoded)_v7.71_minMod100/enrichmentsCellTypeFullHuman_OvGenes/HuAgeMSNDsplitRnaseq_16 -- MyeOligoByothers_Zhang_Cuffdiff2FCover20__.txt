@@ -1,0 +1,5 @@
+"","HuAgeMSNDsplitRnaseq_16....MyeOligoByothers_Zhang_Cuffdiff2FCover20__"
+"1","CTNNA2"
+"2","GAS2"
+"3","MAGI2"
+"4","PHACTR1"

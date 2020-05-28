@@ -1,0 +1,6 @@
+"","lightcyan....QNSCbyPNSC_Ben_FC5___"
+"1","ANXA11"
+"2","CRYAB"
+"3","DNAJB4"
+"4","HSPA1A"
+"5","LIN7A"

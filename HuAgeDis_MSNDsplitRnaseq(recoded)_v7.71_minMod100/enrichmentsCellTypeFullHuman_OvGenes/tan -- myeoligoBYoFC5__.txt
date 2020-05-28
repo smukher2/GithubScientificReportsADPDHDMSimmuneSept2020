@@ -1,0 +1,5 @@
+"","tan....myeoligoBYoFC5__"
+"1","APOD"
+"2","CA14"
+"3","CERS2"
+"4","TMOD1"

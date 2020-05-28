@@ -1,0 +1,7 @@
+"","midnightblue....HDbyCON_FC1.25__"
+"1","DGKE"
+"2","DUSP2"
+"3","EGR2"
+"4","HSPA8"
+"5","PTP4A1"
+"6","TMED2"

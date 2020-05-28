@@ -1,0 +1,8 @@
+"","HuAgeMSNDsplitRnaseq_08....ADbyCON_FC1.25__"
+"1","AQP1"
+"2","CDKN1C"
+"3","CHST3"
+"4","CP"
+"5","LAMP2"
+"6","QDPR"
+"7","RGS3"

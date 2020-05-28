@@ -1,0 +1,8 @@
+"","darkgreen....MicroByMono_Zhang_Cuffdiff2FCover20__"
+"1","ABHD6"
+"2","ARHGAP22"
+"3","GPD1"
+"4","PEX5L"
+"5","RAPGEF5"
+"6","RASGRP3"
+"7","TMC7"

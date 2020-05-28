@@ -1,0 +1,7 @@
+"","HuAgeMSNDsplit_14....MicroByMono_Zhang_Cuffdiff2FCover20__"
+"1","CD81"
+"2","KCNMA1"
+"3","SLC39A8"
+"4","SLCO2B1"
+"5","SLCO4A1"
+"6","TEK"

@@ -1,0 +1,8 @@
+"","greenyellow....qRP_BY_aNP_ThanTrong_up__"
+"1","ABCC5"
+"2","CDH4"
+"3","CRIP2"
+"4","DNAJC12"
+"5","GALNS"
+"6","PTCH2"
+"7","SCPEP1"

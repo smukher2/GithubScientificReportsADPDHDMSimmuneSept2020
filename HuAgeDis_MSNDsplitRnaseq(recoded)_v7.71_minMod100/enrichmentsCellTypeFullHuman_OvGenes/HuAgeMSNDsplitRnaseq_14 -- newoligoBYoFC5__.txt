@@ -1,0 +1,7 @@
+"","HuAgeMSNDsplitRnaseq_14....newoligoBYoFC5__"
+"1","ATCAY"
+"2","GNG4"
+"3","KIF19"
+"4","PCDH17"
+"5","SEMA4F"
+"6","TMEM163"

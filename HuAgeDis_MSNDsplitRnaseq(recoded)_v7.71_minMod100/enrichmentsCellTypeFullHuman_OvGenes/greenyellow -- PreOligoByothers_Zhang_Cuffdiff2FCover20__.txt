@@ -1,0 +1,5 @@
+"","greenyellow....PreOligoByothers_Zhang_Cuffdiff2FCover20__"
+"1","DPY30"
+"2","NEDD4"
+"3","POSTN"
+"4","RPP40"

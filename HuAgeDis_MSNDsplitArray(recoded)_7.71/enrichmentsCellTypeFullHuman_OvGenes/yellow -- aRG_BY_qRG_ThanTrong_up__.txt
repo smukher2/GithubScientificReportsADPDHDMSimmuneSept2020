@@ -1,0 +1,4 @@
+"","yellow....aRG_BY_qRG_ThanTrong_up__"
+"1","NEUROD1"
+"2","NFIL3"
+"3","VIM"

@@ -1,0 +1,5 @@
+"","HuAgeMSNDsplitRnaseq_09....aRG_BY_qRG_ThanTrong_up__"
+"1","AFAP1"
+"2","CNTLN"
+"3","ORC6"
+"4","PSKH1"

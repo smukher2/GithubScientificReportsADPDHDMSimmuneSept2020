@@ -1,0 +1,6 @@
+"","HuAgeMSNDsplitRnaseq_05....aRG_BY_qRG_ThanTrong_up__"
+"1","BOC"
+"2","LOXL1"
+"3","MCM6"
+"4","MUS81"
+"5","ST5"

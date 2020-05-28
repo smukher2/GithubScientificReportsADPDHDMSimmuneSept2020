@@ -1,0 +1,6 @@
+"","HuAgeMSNDsplitRnaseq_10....MacroByMicro_Zhang_Cuffdiff2FCover20__"
+"1","C4A"
+"2","CCNB2"
+"3","CFP"
+"4","KIFC1"
+"5","MKI67"

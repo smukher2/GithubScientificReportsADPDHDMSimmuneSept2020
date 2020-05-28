@@ -1,0 +1,6 @@
+"","HuAgeMSNDsplitRnaseq_20....PGBCbyQGBC_Aulestia_FC5___"
+"1","AC233964.1"
+"2","HMGN2P17"
+"3","INHBA"
+"4","MFAP5"
+"5","NKX6-1"

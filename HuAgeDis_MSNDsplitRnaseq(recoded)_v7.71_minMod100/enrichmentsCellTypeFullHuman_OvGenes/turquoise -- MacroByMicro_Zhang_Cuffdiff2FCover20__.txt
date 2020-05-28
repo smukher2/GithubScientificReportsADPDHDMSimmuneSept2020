@@ -1,0 +1,8 @@
+"","turquoise....MacroByMicro_Zhang_Cuffdiff2FCover20__"
+"1","ACACA"
+"2","CKAP2"
+"3","EVI5"
+"4","FOXM1"
+"5","KCTD9"
+"6","STEAP3"
+"7","TRAF3IP2"

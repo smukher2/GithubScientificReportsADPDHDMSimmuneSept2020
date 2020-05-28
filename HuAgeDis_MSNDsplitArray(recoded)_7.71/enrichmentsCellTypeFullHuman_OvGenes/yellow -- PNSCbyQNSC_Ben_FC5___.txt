@@ -1,0 +1,8 @@
+"","yellow....PNSCbyQNSC_Ben_FC5___"
+"1","FBP1"
+"2","HK2"
+"3","KCNJ15"
+"4","NEUROD1"
+"5","PSMB9"
+"6","PSTPIP2"
+"7","SLC1A5"

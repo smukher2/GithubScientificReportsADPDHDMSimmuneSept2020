@@ -1,0 +1,6 @@
+"","cyan....QGBObyPGBO_GSE114574_Tejero_FC5___"
+"1","CD81"
+"2","EMP2"
+"3","LEF1"
+"4","PLAT"
+"5","VWF"

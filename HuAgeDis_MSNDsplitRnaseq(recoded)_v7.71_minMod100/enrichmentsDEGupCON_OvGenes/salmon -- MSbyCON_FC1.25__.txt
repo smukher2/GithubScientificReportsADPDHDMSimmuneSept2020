@@ -1,0 +1,6 @@
+"","salmon....MSbyCON_FC1.25__"
+"1","HBQ1"
+"2","IL12RB2"
+"3","RPS4Y1"
+"4","SLC24A3"
+"5","USP9Y"

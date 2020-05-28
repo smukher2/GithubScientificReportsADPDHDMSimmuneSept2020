@@ -1,0 +1,156 @@
+---
+title: "merge_metadata_and_metadatacoded"
+author: "Shradha Mukherjee"
+date: "March 21, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, Grade_3F, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+A=read.csv('./merged_expr_metadata/Step8_result_merge_GSE33000_to_GSE43490_metadata_SampleID_coded.csv')
+colnames(A)[colnames(A)=="X"] <- "Sample_Name"
+```
+
+```{r}
+B=read.csv('./merged_expr_metadata/Step5D_result_merge_GSE33000_to_GSE43490_metadata_SampleID.csv')
+```
+
+#for recoding DiseaseAD, DiseasePD, DiseaseHD and DiseaseMS
+```{r}
+#Get disease id from the original metadata as.character 
+A$DiseaseAD=as.character(B$Disease_OwnCon)
+
+#Code interest disease as 1 and CON as 0
+A$DiseaseAD[A$DiseaseAD=="AD"] <- "1"
+A$DiseaseAD[A$DiseaseAD=="CON_for_AD"] <- "0"
+A$DiseaseAD[A$DiseaseAD=="CON_for_ADHD"] <- "0"
+
+#code other diseases as NA
+A$DiseaseAD[A$DiseaseAD=="PD"] <- "NA"
+A$DiseaseAD[A$DiseaseAD=="CON_for_PD"] <- "NA"
+A$DiseaseAD[A$DiseaseAD=="HD"] <- "NA"
+A$DiseaseAD[A$DiseaseAD=="CON_for_HD"] <- "NA"
+A$DiseaseAD[A$DiseaseAD=="MS"] <- "NA"
+A$DiseaseAD[A$DiseaseAD=="CON_for_MS"] <- "NA"
+
+#convert the column back to factor type
+A$DiseaseAD=as.factor(A$DiseaseAD)
+```
+
+```{r}
+#Get disease id from the original metadata as.character 
+A$DiseasePD=as.character(B$Disease_OwnCon)
+
+#Code interest disease as 1 and CON as 0
+A$DiseasePD[A$DiseasePD=="PD"] <- "1"
+A$DiseasePD[A$DiseasePD=="CON_for_PD"] <- "0"
+
+#code other diseases as NA
+A$DiseasePD[A$DiseasePD=="AD"] <- "NA"
+A$DiseasePD[A$DiseasePD=="CON_for_AD"] <- "NA"
+A$DiseasePD[A$DiseasePD=="CON_for_ADHD"] <- "NA"
+A$DiseasePD[A$DiseasePD=="HD"] <- "NA"
+A$DiseasePD[A$DiseasePD=="CON_for_HD"] <- "NA"
+A$DiseasePD[A$DiseasePD=="MS"] <- "NA"
+A$DiseasePD[A$DiseasePD=="CON_for_MS"] <- "NA"
+
+#convert the column back to factor type
+A$DiseasePD=as.factor(A$DiseasePD)
+```
+
+```{r}
+#Get disease id from the original metadata as.character 
+A$DiseaseHD=as.character(B$Disease_OwnCon)
+
+#Code interest disease as 1 and CON as 0
+A$DiseaseHD[A$DiseaseHD=="HD"] <- "1"
+A$DiseaseHD[A$DiseaseHD=="CON_for_HD"] <- "0"
+A$DiseaseHD[A$DiseaseHD=="CON_for_ADHD"] <- "0"
+
+#code other diseases as NA
+A$DiseaseHD[A$DiseaseHD=="AD"] <- "NA"
+A$DiseaseHD[A$DiseaseHD=="CON_for_AD"] <- "NA"
+A$DiseaseHD[A$DiseaseHD=="PD"] <- "NA"
+A$DiseaseHD[A$DiseaseHD=="CON_for_PD"] <- "NA"
+A$DiseaseHD[A$DiseaseHD=="MS"] <- "NA"
+A$DiseaseHD[A$DiseaseHD=="CON_for_MS"] <- "NA"
+
+#convert the column back to factor type
+A$DiseaseHD=as.factor(A$DiseaseHD)
+```
+
+```{r}
+#Get disease id from the original metadata as.character 
+A$DiseaseMS=as.character(B$Disease_OwnCon)
+
+#Code interest disease as 1 and CON as 0
+A$DiseaseMS[A$DiseaseMS=="MS"] <- "1"
+A$DiseaseMS[A$DiseaseMS=="CON_for_MS"] <- "0"
+
+#code other diseases as NA
+A$DiseaseMS[A$DiseaseMS=="AD"] <- "NA"
+A$DiseaseMS[A$DiseaseMS=="CON_for_AD"] <- "NA"
+A$DiseaseMS[A$DiseaseMS=="CON_for_ADHD"] <- "NA"
+A$DiseaseMS[A$DiseaseMS=="PD"] <- "NA"
+A$DiseaseMS[A$DiseaseMS=="CON_for_PD"] <- "NA"
+A$DiseaseMS[A$DiseaseMS=="HD"] <- "NA"
+A$DiseaseMS[A$DiseaseMS=="CON_for_HD"] <- "NA"
+
+#convert the column back to factor type
+A$DiseaseMS=as.factor(A$DiseaseMS)
+```
+
+#Critical check step: check that sample order is unchanged
+#The B file or './merged_expr_metadata/Step5D_result_merge_GSE33000_to_GSE43490_metadata_SampleID.csv' has its order of samples matched with the merged expression data also generated in Step5D. Similarly, check that sample order is unchanged between A and the Step5 generated expression data C or './merged_expr_metadata/Step5D_result_merge_GSE33000_to_GSE43490_Expr_Gene_SampleID.csv'
+#So let;s make ensure this order is unchanges in A otherwise sample name and its metadata will not match in further steps of the analysis liek in WGCNA correlation step.   
+```{r}
+#check order in new A vs metadata file Step5D or B
+A$Sample_Name==B$Sample_Name
+##This should be all TRUE which means the orders match
+```
+
+```{r}
+C=read.csv('./merged_expr_metadata/Step5D_result_merge_GSE33000_to_GSE43490_Expr_Gene_SampleID.csv', row.names=1)
+#check order in new A vs expression file Step5D or C
+A$Sample_Name==colnames(C)
+##This should be all TRUE which means the orders match
+```
+
+#Save the newly made coded file which now has additional columns
+```{r}
+write.csv(A, "Step8_result_merge_GSE33000_to_GSE43490_metadata_SampleID_coded_vsCONown.csv")
+```
+
+#Clear up workspace 
+```{r}
+#save image
+save.image(file="metadata_edited_temp.RData")
+```
+
+#Organization and saving session (software version) information
+```{r}
+sessionInfo()
+toLatex(sessionInfo())
+```
+
+```{r}
+#Organize of files
+library(filesstrings)
+
+#metadata 
+dir.create("merged_expr_metadata")
+file.move(list.files(pattern = 'metadata_edited_temp.RData'), "merged_expr_metadata")
+
+#metadata 
+dir.create("merged_expr_metadata")
+file.move(list.files(pattern = 'Step8_result_merge_GSE33000_to_GSE43490_metadata_SampleID_coded_vsCONown.csv'), "merged_expr_metadata")
+```

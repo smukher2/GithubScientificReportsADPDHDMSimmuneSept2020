@@ -1,0 +1,7 @@
+"","blue....QGBCbyPGBC_Aulestia_FC5___"
+"1","AOC3"
+"2","BCL6"
+"3","BIRC7"
+"4","FUT3"
+"5","FUT5"
+"6","MLN"

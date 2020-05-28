@@ -1,0 +1,8 @@
+"","HuAgeMSNDsplitRnaseq_04....qRG_BY_aRG_ThanTrong_up__"
+"1","ARPP21"
+"2","CD226"
+"3","GABRA5"
+"4","GAD2"
+"5","OPRL1"
+"6","RGS8"
+"7","SYNPR"

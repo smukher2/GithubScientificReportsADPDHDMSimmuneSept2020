@@ -1,0 +1,7 @@
+"","HuAgeMSNDsplit_12....PNSCbyQNSC_Ben_FC5___"
+"1","CDKN3"
+"2","DCC"
+"3","GAS7"
+"4","GRIA1"
+"5","GRIN2A"
+"6","LMO3"

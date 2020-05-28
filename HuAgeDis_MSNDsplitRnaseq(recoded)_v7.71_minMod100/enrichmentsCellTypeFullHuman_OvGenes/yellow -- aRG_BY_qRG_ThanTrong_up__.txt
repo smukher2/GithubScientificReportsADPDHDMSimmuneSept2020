@@ -1,0 +1,6 @@
+"","yellow....aRG_BY_qRG_ThanTrong_up__"
+"1","CCNA2"
+"2","DHFR"
+"3","MNS1"
+"4","PLK1"
+"5","RCOR2"

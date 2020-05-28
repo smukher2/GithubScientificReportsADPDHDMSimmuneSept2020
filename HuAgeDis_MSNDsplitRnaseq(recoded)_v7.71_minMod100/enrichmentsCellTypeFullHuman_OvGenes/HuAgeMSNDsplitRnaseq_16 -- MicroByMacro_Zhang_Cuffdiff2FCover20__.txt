@@ -1,0 +1,8 @@
+"","HuAgeMSNDsplitRnaseq_16....MicroByMacro_Zhang_Cuffdiff2FCover20__"
+"1","AEBP1"
+"2","CACNB2"
+"3","EFR3B"
+"4","LRBA"
+"5","RNY3"
+"6","ST6GALNAC5"
+"7","TANC2"

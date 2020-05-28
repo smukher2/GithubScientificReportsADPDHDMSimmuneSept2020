@@ -1,0 +1,3 @@
+"","magenta....MonoByMicro_Zhang_Cuffdiff2FCover20__"
+"1","ECM1"
+"2","RARA"

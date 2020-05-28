@@ -1,0 +1,7 @@
+"","grey60....QGBObyPGBO_GSE114574_Tejero_FC5___"
+"1","CBX4"
+"2","RPL23AP49"
+"3","RPL26L1"
+"4","RPS18P9"
+"5","SUMO2P6"
+"6","YWHAZP2"

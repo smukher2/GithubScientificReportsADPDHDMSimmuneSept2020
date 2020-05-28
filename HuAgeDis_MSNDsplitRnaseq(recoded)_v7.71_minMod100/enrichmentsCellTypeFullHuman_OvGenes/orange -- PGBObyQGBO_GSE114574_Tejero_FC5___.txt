@@ -1,0 +1,8 @@
+"","orange....PGBObyQGBO_GSE114574_Tejero_FC5___"
+"1","KCNG3"
+"2","NKAPP1"
+"3","PCGF7P"
+"4","POLK"
+"5","SPG11"
+"6","ZNF681"
+"7","ZSCAN30"

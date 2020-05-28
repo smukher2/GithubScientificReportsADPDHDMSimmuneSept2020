@@ -1,0 +1,6 @@
+"","HuAgeMSNDsplitRnaseq_02....qRG_BY_aRG_ThanTrong_up__"
+"1","KHDRBS2"
+"2","NECAB1"
+"3","NWD2"
+"4","PRDM8"
+"5","VAV2"

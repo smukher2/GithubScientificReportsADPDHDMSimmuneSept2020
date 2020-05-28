@@ -1,0 +1,7 @@
+"","HuAgeMSNDsplit_20....npcBYnsc_Walker_FC5___"
+"1","CLU"
+"2","FXYD1"
+"3","GPC5"
+"4","GPR143"
+"5","PDLIM3"
+"6","TTYH1"

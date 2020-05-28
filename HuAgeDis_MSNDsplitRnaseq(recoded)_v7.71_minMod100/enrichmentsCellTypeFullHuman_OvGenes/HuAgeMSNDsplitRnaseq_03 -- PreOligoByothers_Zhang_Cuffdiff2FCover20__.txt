@@ -1,0 +1,4 @@
+"","HuAgeMSNDsplitRnaseq_03....PreOligoByothers_Zhang_Cuffdiff2FCover20__"
+"1","GSPT1"
+"2","HNRNPK"
+"3","ZEB2"

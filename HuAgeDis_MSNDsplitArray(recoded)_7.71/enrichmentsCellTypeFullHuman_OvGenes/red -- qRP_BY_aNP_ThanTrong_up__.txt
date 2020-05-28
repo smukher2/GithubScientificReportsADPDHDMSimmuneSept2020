@@ -1,0 +1,7 @@
+"","red....qRP_BY_aNP_ThanTrong_up__"
+"1","CYP51A1"
+"2","EML1"
+"3","FGFR2"
+"4","NPC1"
+"5","PKP4"
+"6","TMEM59"

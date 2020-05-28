@@ -1,0 +1,7 @@
+"","HuAgeMSNDsplitRnaseq_13....MonoByMicro_Zhang_Cuffdiff2FCover20__"
+"1","AFF2"
+"2","ITGA4"
+"3","MYO16"
+"4","NKAIN3"
+"5","PM20D1"
+"6","PROKR2"

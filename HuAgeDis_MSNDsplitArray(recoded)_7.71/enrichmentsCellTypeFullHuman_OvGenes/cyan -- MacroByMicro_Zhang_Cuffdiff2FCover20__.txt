@@ -1,0 +1,6 @@
+"","cyan....MacroByMicro_Zhang_Cuffdiff2FCover20__"
+"1","BCAM"
+"2","CD2"
+"3","ICAM2"
+"4","RAMP3"
+"5","TAGLN2"

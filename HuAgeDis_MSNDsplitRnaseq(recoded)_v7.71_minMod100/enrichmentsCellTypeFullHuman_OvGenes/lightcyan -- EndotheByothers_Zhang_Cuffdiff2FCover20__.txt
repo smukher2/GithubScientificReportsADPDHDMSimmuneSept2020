@@ -1,0 +1,8 @@
+"","lightcyan....EndotheByothers_Zhang_Cuffdiff2FCover20__"
+"1","CCSER1"
+"2","EBF1"
+"3","FAM86B1"
+"4","FAM86B2"
+"5","IQCJ-SCHIP1"
+"6","MBD5"
+"7","SPON2"

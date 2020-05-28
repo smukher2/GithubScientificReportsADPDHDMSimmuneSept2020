@@ -1,0 +1,8 @@
+"","magenta....HDbyCON_FC1.25__"
+"1","GDAP1"
+"2","KCNIP1"
+"3","KCNK1"
+"4","MAPK8"
+"5","NLK"
+"6","PREP"
+"7","SMARCA2"

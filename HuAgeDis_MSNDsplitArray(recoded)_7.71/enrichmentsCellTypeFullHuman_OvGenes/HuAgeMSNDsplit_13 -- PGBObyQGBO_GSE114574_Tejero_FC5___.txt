@@ -1,0 +1,7 @@
+"","HuAgeMSNDsplit_13....PGBObyQGBO_GSE114574_Tejero_FC5___"
+"1","FYCO1"
+"2","GNE"
+"3","IGBP1"
+"4","MAML1"
+"5","MTRR"
+"6","SGPL1"

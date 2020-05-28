@@ -1,0 +1,4 @@
+"","HuAgeMSNDsplitRnaseq_10....qRP_BY_aNP_ThanTrong_up__"
+"1","AGTRAP"
+"2","CFP"
+"3","FKBP14"

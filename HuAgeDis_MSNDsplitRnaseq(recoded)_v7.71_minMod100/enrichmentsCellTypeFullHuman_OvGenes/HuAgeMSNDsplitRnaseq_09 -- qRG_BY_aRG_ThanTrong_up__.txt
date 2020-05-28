@@ -1,0 +1,6 @@
+"","HuAgeMSNDsplitRnaseq_09....qRG_BY_aRG_ThanTrong_up__"
+"1","OSBP2"
+"2","RIN2"
+"3","SPECC1"
+"4","SPOCK3"
+"5","ZCCHC24"

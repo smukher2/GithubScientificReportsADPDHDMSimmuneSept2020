@@ -1,0 +1,4 @@
+"","brown....myeoligoBYoFC5__"
+"1","CYP2C8"
+"2","EFNB3"
+"3","HIST1H1E"

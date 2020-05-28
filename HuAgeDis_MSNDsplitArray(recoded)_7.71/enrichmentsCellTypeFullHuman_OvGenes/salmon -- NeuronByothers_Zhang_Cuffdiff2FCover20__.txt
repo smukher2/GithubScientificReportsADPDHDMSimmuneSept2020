@@ -1,0 +1,7 @@
+"","salmon....NeuronByothers_Zhang_Cuffdiff2FCover20__"
+"1","CACNG5"
+"2","CBFA2T2"
+"3","CENPF"
+"4","MACF1"
+"5","PHC1"
+"6","PTPRK"

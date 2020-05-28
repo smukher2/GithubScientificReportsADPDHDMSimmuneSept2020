@@ -1,0 +1,8 @@
+"","midnightblue....MonoByMicro_Zhang_Cuffdiff2FCover20__"
+"1","GRK5"
+"2","GRM8"
+"3","KCNK3"
+"4","KMO"
+"5","NRGN"
+"6","PRSS16"
+"7","RASGRP1"

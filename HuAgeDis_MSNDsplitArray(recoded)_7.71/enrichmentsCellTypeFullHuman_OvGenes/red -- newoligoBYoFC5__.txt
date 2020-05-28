@@ -1,0 +1,8 @@
+"","red....newoligoBYoFC5__"
+"1","BCAS1"
+"2","EML1"
+"3","SGK2"
+"4","SIRT2"
+"5","SLC12A2"
+"6","TSPAN15"
+"7","UGT8"

@@ -1,0 +1,6 @@
+"","cyan....PGBCbyQGBC_Aulestia_FC5___"
+"1","IL4R"
+"2","NPR1"
+"3","SOX18"
+"4","TCN2"
+"5","TGM2"

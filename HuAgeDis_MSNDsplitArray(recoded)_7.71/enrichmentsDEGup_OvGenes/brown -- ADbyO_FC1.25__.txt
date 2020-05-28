@@ -1,0 +1,5 @@
+"","brown....ADbyO_FC1.25__"
+"1","CDR1"
+"2","ENPEP"
+"3","GCH1"
+"4","HIST1H4I"

@@ -1,0 +1,8 @@
+"","HuAgeMSNDsplit_05....MyeOligoByothers_Zhang_Cuffdiff2FCover20__"
+"1","HAPLN2"
+"2","MAP4"
+"3","MAP4K4"
+"4","PLEKHB1"
+"5","SLCO3A1"
+"6","SNX6"
+"7","TYRO3"

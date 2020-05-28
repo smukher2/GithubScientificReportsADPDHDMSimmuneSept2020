@@ -1,0 +1,5 @@
+"","darkgreen....MonoByMicro_Zhang_Cuffdiff2FCover20__"
+"1","CD44"
+"2","CHI3L1"
+"3","EMP1"
+"4","SERPINA3"

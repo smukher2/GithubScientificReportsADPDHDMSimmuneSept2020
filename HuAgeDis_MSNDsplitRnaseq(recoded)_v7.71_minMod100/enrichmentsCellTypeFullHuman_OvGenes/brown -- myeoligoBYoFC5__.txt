@@ -1,0 +1,7 @@
+"","brown....myeoligoBYoFC5__"
+"1","KIF5A"
+"2","LPAR1"
+"3","NKAIN1"
+"4","NRTN"
+"5","PLEKHB1"
+"6","TRAK2"

@@ -1,0 +1,6 @@
+"","darkgreen....PNSCbyQNSC_Ben_FC5___"
+"1","LRP2"
+"2","MAP2K6"
+"3","MCM4"
+"4","NRARP"
+"5","PIK3C2B"

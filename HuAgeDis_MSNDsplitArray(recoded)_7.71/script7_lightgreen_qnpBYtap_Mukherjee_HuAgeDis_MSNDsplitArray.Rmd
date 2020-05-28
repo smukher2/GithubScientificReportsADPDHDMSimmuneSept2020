@@ -1,0 +1,344 @@
+---
+title: "script7_lightgreen_qnpBYtap_Mukherjee_HuAgeDis_MSNDsplitArray"
+author: "Shradha Mukherjee"
+date: "Last updated January, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. Html_fragmented is quicker to load than html, hence for this pipeline which genenerated a large mount of data, we have used html_fragment to report Rmarkdown.
+
+#Checklist for this pipeline 
+  #1) based on cell type and trait associated module replace in code "lightgreen" or "HuAgeDis_<number>" with module name that is associated with trait or disease of interest. And replace hub gene names. 
+  #2) WGCNA assigns colors randomly (except few reserved colors like "grey" for unassigned genes). Therefore, upon re-run of this analysis it may call the age and disease associated qnpBYtap_Mukherjee_FC5 enriched "black" module by some other color such as "pink", in which case this color is specified step 29 onwards as described in point 4) above.
+  #3) The present analysis was done on MacOS, using knitToHtmlfragment.
+  
+To reuse this code for other datasets 
+  a) in this pipeline human gene symbols are used
+
+################################hub gene Disease association plot, module  Disease association plot###########
+###Step23: Load libraries, set working directory and Import data for WGCNA###
+```{r}
+#If restarting program uncomment line below
+load(file="./Module_Trait_wgcnaRData/WGCNA_temp.RData")
+
+#save working directory location
+wd<-getwd()
+wd
+``` 
+
+```{r}
+#Load additional functions required for this pipeline
+#Reference: Miller, J.A., Horvath, S., and Geschwind, D.H. (2010). Divergence of Human and mouse brain transcriptome highlights Alzheimer disease pathways. Proceedings of the National Academy of Sciences of the United States of America 107, 12698-12703.
+
+write.geneList <- function(PG, filename, allProbes=0, allGenes=0, probe="g")
+{
+## These functions write a genelist / probelist to a file of geneNames
+
+## USER inputs
+# PG = the probe/gene you want written to a gene list
+# allProbes = the list of probe names for the above probes
+# allGenes = the list of gene names for the corresponding probes
+# filename = the filename (can include folder)
+# probe = the default ("g") says PG is a gene and doesn''t need to be converted
+#         to a gene.  Otherwise PG is assumed to be a probe and converted
+
+gene = PG
+if (probe!="g") {
+  gene = probe2Gene(PG,allProbes,allGenes)
+}
+write(gene,filename,sep="\n")
+
+}
+
+cor.test.l = function(x){
+## Performs a Pearson correlation on a vector of genes
+ ct = cor.test(x,var)
+ return(c(ct$est,ct$p.val))
+}
+```
+
+```{r}
+#library(BiocInstaller)
+#biocLite("qvalue")
+#install.packages(c("impute","dynamicTreeCut","flashClust","Hmisc","WGCNA","stringi","enrichR","filesstrings"))
+library(impute)
+library(dynamicTreeCut)
+library(qvalue)
+library(flashClust)
+library(Hmisc)
+library(WGCNA)
+library(stringi)
+library(stringr)
+library(enrichR)#for pathway analysis
+library(filesstrings)#for file organization
+options(stringsAsFactors = FALSE)
+```
+
+###Step24 lightgreen : Disease association and plot of hub genes in 'lightgreen' module in Disease data A1###
+```{r}
+#Any choice of genes can be used here as shown in commented code line example below.  
+#lightgreen_qnpBYtap_Mukherjee_FC5_hubgenes=c("C4B","C4A","CTSS","LGALS3BP","APOD","C1QC","TREM2","C1QB","C1QA","MPEG1")
+#Here we pick hub genes from our WGCNA variable that stores hub genes and the modules they belong to  
+head(topGenesKME)
+dim(topGenesKME)
+```
+
+```{r}
+#hub genes in lightgreen module are stored in a variable for plotting. 
+topGenesKMEdf=as.data.frame(topGenesKME)
+lightgreen_hubgenes=topGenesKMEdf$lightgreen
+lightgreen_hubgenes
+```
+
+```{r}
+#view metadata and expression data A1
+DT::datatable(metadataA1g)
+DT::datatable(datExprA1g2[1:7,1:7])
+```
+
+```{r}
+#storing variable
+Disease_Levels=metadataA1g
+Disease_Levels$Disease[Disease_Levels$Disease == "CON"] <- 0 #type manually
+Disease_Levels$Disease[Disease_Levels$Disease == "AD"] <- 1 #type manually
+Disease_Levels$Disease[Disease_Levels$Disease == "HD"] <- 2 #type manually
+Disease_Levels$Disease[Disease_Levels$Disease == "PD"] <- 3 #type manually
+Disease_Levels$Disease[Disease_Levels$Disease == "MS"] <- 4 #type manually
+Disease_xlabel<-c("CON=0, AD=1, HD=2, PD=3, MS=4")
+head(Disease_Levels)
+Disease=as.numeric(Disease_Levels$Disease)
+head(Disease)
+```
+
+```{r}
+#corelation test with variable on expression and modules
+var = Disease
+datDisease = t(apply(datExprA1g2,1,cor.test.l))
+
+var = Disease
+datDiseaseM = t(apply(t(ME_1A),1,cor.test.l))
+
+#Find the Disease-related expression in data A1
+colnames(datDisease)=c("CorrDisease","PvalDisease")
+dim(datDisease[datDisease[,2]<0.01,])
+DT::datatable(datDisease[datDisease[,2]<0.01,])
+write.csv(datDisease[datDisease[,2]<0.01,],"Step24_result_A1_datDisease_sig_trait_table_form.csv")
+
+#Find the Disease-related modules in data A1
+#this is visually represented in the trait plot 'A1_relating modules to trait.pdf'
+colnames(datDiseaseM)=c("CorrDisease","PvalDisease")
+datDiseaseM[datDiseaseM[,2]<0.01,]
+write.csv(datDiseaseM[datDiseaseM[,2]<0.01,],"Step24_result_A1_datDiseaseM_sig_trait_table_form.csv")
+```
+
+```{r}
+#Export the correlation with Disease and p-value 
+datDisease_lightgreen_hubgenes=datDisease[lightgreen_hubgenes,]
+DT::datatable(datDisease_lightgreen_hubgenes)
+write.csv(datDisease_lightgreen_hubgenes,"Step24_result_A1_datDisease_lightgreen_hubgenes.csv")
+```
+
+```{r}
+#Scatterplot of genes
+#If get error in kniting the Rmd then uncomment line below
+#par(mar=c(1,1,1,1))
+pdf(file="Step24_plot_A1_Disease_lightgreen_hubgenes_Scatterplot.pdf", width=10, height=10)
+par(mfrow=c(2,2))
+for (i in lightgreen_hubgenes[1:length(lightgreen_hubgenes)]) {
+  verboseScatterplot(x=Disease, y=as.numeric(datExprA1g2[i,]),main=i, las=2, abline=TRUE, xlab=Disease_xlabel, ylab="")
+}
+dev.off()
+
+#Boxplot of genes
+#If get error in kniting the Rmd then uncomment line below
+#par(mar=c(1,1,1,1))
+pdf(file="Step24_plot_A1_Disease_lightgreen_hubgenes_Boxplot.pdf", width=10, height=10)
+par(mfrow=c(2,2))
+for (i in lightgreen_hubgenes[1:length(lightgreen_hubgenes)]) {
+  verboseBoxplot(x=as.numeric(datExprA1g2[i,]), g=Disease, main=i, las=2, pt.col = "lightgreen", pt.bg = "grey", notch=FALSE, xlab=Disease_xlabel, ylab="", col="lightgreen")
+}
+dev.off()
+```
+
+```{r}
+#creating label key for verboseBoxplot
+#library(tidyr)
+#label_keyDisease_1=unite(datTraits, "Disease_code_chr", c("Disease_chr", "Disease_code"), sep = "=")
+#label_keyDisease=unique(label_keyDisease_1$Disease_code_chr)
+#label_keyDisease 
+
+#Scatterplot of module of interest vs Disease
+#If get error in kniting the Rmd then uncomment line below
+#par(mar=c(1,1,1,1))
+pdf(file="Step24_plot_A1_Disease_lightgreen_Scatterplot.pdf", width=10, height=10)
+par(mfrow=c(2,2))
+for (i in 1:length(ME_1A)) {
+  verboseScatterplot(x=Disease, y=as.numeric(ME_1A[,i]), main=colnames(ME_1A)[i], las=2, abline=TRUE, xlab=Disease_xlabel, ylab="")
+}
+dev.off()
+#Note this correlation value should match the pearson correlation and p-value in 
+
+#verboseBoxplot of module of interest vs Disease
+#If get error in kniting the Rmd then uncomment line below
+#par(mar=c(1,1,1,1))
+pdf(file="Step24_plot_A1_Disease_lightgreen_Boxplot.pdf", width=10, height=10)
+par(mfrow=c(2,2))
+for (i in 1:length(ME_1A)) {
+  verboseBoxplot(x=as.numeric(ME_1A[,i]), g=Disease, main=colnames(ME_1A)[i], las=2, pt.col = "lightgreen", pt.bg = "grey", notch=FALSE, xlab=Disease_xlabel, ylab="", col=colorsA1[i])
+}
+dev.off()
+#Note this p-value is Kruskal–Wallis test p-value not to be confused with the correlation and p-value shown in verboseScatter plot
+```
+
+###Step25 lightgreen : Disease association and plot of qnpBYtap_Mukherjee_FC5 genes in 'lightgreen' module in Disease data A1###
+```{r}
+#Any choice of genes can be used here as shown in commented code line example below.  
+#lightgreen_qnpBYtap_Mukherjee_FC5_qnpBYtap_Mukherjee_FC5genes=c("C4B","C4A","CTSS","LGALS3BP","APOD","C1QC","TREM2","C1QB","C1QA","MPEG1")
+#Here we pick qnpBYtap_Mukherjee_FC5 genes from our WGCNA variable that stores qnpBYtap_Mukherjee_FC5 genes and the modules they belong to  
+lightgreen_qnpBYtap_Mukherjee_FC5genes=read.delim("./enrichmentsCellTypeFullHuman_OvGenes/lightgreen -- qnpBYtap_Mukherjee_FC5___.txt", header=T, sep=",") 
+#note that unlike most .txt files here the genes and their serial numbers are seperated by comma ,""
+head(lightgreen_qnpBYtap_Mukherjee_FC5genes)
+```
+
+```{r}
+#qnpBYtap_Mukherjee_FC5 genes in lightgreen module are stored in a variable for plotting. 
+lightgreen_qnpBYtap_Mukherjee_FC5genesdf=as.data.frame(lightgreen_qnpBYtap_Mukherjee_FC5genes)
+lightgreen_qnpBYtap_Mukherjee_FC5genes=lightgreen_qnpBYtap_Mukherjee_FC5genesdf$lightgreen....qnpBYtap_Mukherjee_FC5___
+lightgreen_qnpBYtap_Mukherjee_FC5genes
+```
+
+```{r}
+#view metadata and expression data A1
+DT::datatable(metadataA1g)
+DT::datatable(datExprA1g2[1:7,1:7])
+```
+
+```{r}
+#storing variable
+Disease_Levels=metadataA1g
+Disease_Levels$Disease[Disease_Levels$Disease == "CON"] <- 0 #type manually
+Disease_Levels$Disease[Disease_Levels$Disease == "AD"] <- 1 #type manually
+Disease_Levels$Disease[Disease_Levels$Disease == "HD"] <- 2 #type manually
+Disease_Levels$Disease[Disease_Levels$Disease == "PD"] <- 3 #type manually
+Disease_Levels$Disease[Disease_Levels$Disease == "MS"] <- 4 #type manually
+Disease_xlabel<-c("CON=0, AD=1, HD=2, PD=3, MS=4")
+head(Disease_Levels)
+Disease=as.numeric(Disease_Levels$Disease)
+head(Disease)
+```
+
+```{r}
+#corelation test with variable on expression and modules
+var = Disease
+datDisease = t(apply(datExprA1g2,1,cor.test.l))
+
+var = Disease
+datDiseaseM = t(apply(t(ME_1A),1,cor.test.l))
+
+#Find the Disease-related expression in data A1
+colnames(datDisease)=c("CorrDisease","PvalDisease")
+dim(datDisease[datDisease[,2]<0.01,])
+DT::datatable(datDisease[datDisease[,2]<0.01,])
+write.csv(datDisease[datDisease[,2]<0.01,],"Step25_result_A1_datDisease_sig_trait_table_form.csv")
+
+#Find the Disease-related modules in data A1
+#this is visually represented in the trait plot 'A1_relating modules to trait.pdf'
+colnames(datDiseaseM)=c("CorrDisease","PvalDisease")
+datDiseaseM[datDiseaseM[,2]<0.01,]
+write.csv(datDiseaseM[datDiseaseM[,2]<0.01,],"Step25_result_A1_datDiseaseM_sig_trait_table_form.csv")
+```
+
+```{r}
+#Export the correlation with Disease and p-value 
+datDisease_lightgreen_qnpBYtap_Mukherjee_FC5genes=datDisease[lightgreen_qnpBYtap_Mukherjee_FC5genes,]
+DT::datatable(datDisease_lightgreen_qnpBYtap_Mukherjee_FC5genes)
+write.csv(datDisease_lightgreen_qnpBYtap_Mukherjee_FC5genes,"Step25_result_A1_datDisease_lightgreen_qnpBYtap_Mukherjee_FC5genes.csv")
+```
+
+```{r}
+#Scatterplot of genes
+#If get error in kniting the Rmd then uncomment line below
+#par(mar=c(1,1,1,1))
+pdf(file="Step25_plot_A1_Disease_lightgreen_qnpBYtap_Mukherjee_FC5genes_Scatterplot.pdf", width=10, height=10)
+par(mfrow=c(2,2))
+for (i in lightgreen_qnpBYtap_Mukherjee_FC5genes[1:length(lightgreen_qnpBYtap_Mukherjee_FC5genes)]) {
+  verboseScatterplot(x=Disease, y=as.numeric(datExprA1g2[i,]),main=i, las=2, abline=TRUE, xlab=Disease_xlabel, ylab="")
+}
+dev.off()
+
+#Boxplot of genes
+#If get error in kniting the Rmd then uncomment line below
+#par(mar=c(1,1,1,1))
+pdf(file="Step25_plot_A1_Disease_lightgreen_qnpBYtap_Mukherjee_FC5genes_Boxplot.pdf", width=10, height=10)
+par(mfrow=c(2,2))
+for (i in lightgreen_qnpBYtap_Mukherjee_FC5genes[1:length(lightgreen_qnpBYtap_Mukherjee_FC5genes)]) {
+  verboseBoxplot(x=as.numeric(datExprA1g2[i,]), g=Disease, main=i, las=2, pt.col = "lightgreen", pt.bg = "grey", notch=FALSE, xlab=Disease_xlabel, ylab="", col="lightgreen")
+}
+dev.off()
+```
+
+```{r}
+#creating label key for verboseBoxplot
+#library(tidyr)
+#label_keyDisease_1=unite(datTraits, "Disease_code_chr", c("Disease_chr", "Disease_code"), sep = "=")
+#label_keyDisease=unique(label_keyDisease_1$Disease_code_chr)
+#label_keyDisease 
+
+#Scatterplot of module of interest vs Disease
+#If get error in kniting the Rmd then uncomment line below
+#par(mar=c(1,1,1,1))
+pdf(file="Step25_plot_A1_Disease_lightgreen_Scatterplot.pdf", width=10, height=10)
+par(mfrow=c(2,2))
+for (i in 1:length(ME_1A)) {
+  verboseScatterplot(x=Disease, y=as.numeric(ME_1A[,i]), main=colnames(ME_1A)[i], las=2, abline=TRUE, xlab=Disease_xlabel, ylab="")
+}
+dev.off()
+#Note this correlation value should match the pearson correlation and p-value in 
+
+#verboseBoxplot of module of interest vs Disease
+#If get error in kniting the Rmd then uncomment line below
+#par(mar=c(1,1,1,1))
+pdf(file="Step25_plot_A1_Disease_lightgreen_Boxplot.pdf", width=10, height=10)
+par(mfrow=c(2,2))
+for (i in 1:length(ME_1A)) {
+  verboseBoxplot(x=as.numeric(ME_1A[,i]), g=Disease, main=colnames(ME_1A)[i], las=2, pt.col = "lightgreen", pt.bg = "grey", notch=FALSE, xlab=Disease_xlabel, ylab="", col=colorsA1[i])
+}
+dev.off()
+#Note this p-value is Kruskal–Wallis test p-value not to be confused with the correlation and p-value shown in verboseScatter plot
+```
+
+#Step 26: Organization and saving session (software version) information 
+```{r}
+sessionInfo()
+toLatex(sessionInfo())
+```
+
+```{r}
+#save image
+save.image(file="lightgreenModHubqnpBYtap_Mukherjee_FC5.RData")
+```
+
+```{r}
+#Organize of files
+library(filesstrings)
+
+dir.create("lightgreenModHubqnpBYtap_Mukherjee_FC5")
+file.move(list.files(pattern = 'lightgreenModHubqnpBYtap_Mukherjee_FC5.RData'), "lightgreenModHubqnpBYtap_Mukherjee_FC5")
+file.move(list.files(pattern = "Step24_plot*"), "lightgreenModHubqnpBYtap_Mukherjee_FC5")
+file.move(list.files(pattern = "Step25_plot*"), "lightgreenModHubqnpBYtap_Mukherjee_FC5")
+file.move(list.files(pattern = "Step24_result*"), "lightgreenModHubqnpBYtap_Mukherjee_FC5")
+file.move(list.files(pattern = "Step25_result*"), "lightgreenModHubqnpBYtap_Mukherjee_FC5")
+
+```
+
+```{r}
+#Remove .RData and clear environment to free up memory
+rm(list=ls())
+file.remove("temp.RData")
+gc()
+```

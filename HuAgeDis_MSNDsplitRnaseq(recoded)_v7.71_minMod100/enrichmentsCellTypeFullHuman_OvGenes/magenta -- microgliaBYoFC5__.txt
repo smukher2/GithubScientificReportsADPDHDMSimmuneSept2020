@@ -1,0 +1,7 @@
+"","magenta....microgliaBYoFC5__"
+"1","CABLES1"
+"2","CCL3L1"
+"3","CCL4"
+"4","CCL4L2"
+"5","CCL8"
+"6","RNU5E-1"

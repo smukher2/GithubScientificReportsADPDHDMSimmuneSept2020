@@ -1,0 +1,6 @@
+"","HuAgeMSNDsplitRnaseq_03....qRG_BY_aRG_ThanTrong_up__"
+"1","CADM4"
+"2","ENO2"
+"3","GDF11"
+"4","NDUFA4"
+"5","TUB"

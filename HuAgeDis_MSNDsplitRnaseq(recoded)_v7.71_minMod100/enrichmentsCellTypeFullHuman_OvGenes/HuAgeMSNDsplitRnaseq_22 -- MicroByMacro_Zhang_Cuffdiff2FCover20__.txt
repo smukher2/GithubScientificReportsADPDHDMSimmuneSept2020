@@ -1,0 +1,7 @@
+"","HuAgeMSNDsplitRnaseq_22....MicroByMacro_Zhang_Cuffdiff2FCover20__"
+"1","ABHD6"
+"2","APLP1"
+"3","GPD1"
+"4","LGI3"
+"5","MPP2"
+"6","ROGDI"

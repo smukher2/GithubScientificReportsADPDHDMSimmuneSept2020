@@ -1,0 +1,7 @@
+"","greenyellow....MSbyCON_FC1.25__"
+"1","APLP1"
+"2","CD22"
+"3","DNAJB2"
+"4","FAM3A"
+"5","FASTK"
+"6","RGS11"

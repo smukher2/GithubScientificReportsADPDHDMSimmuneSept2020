@@ -1,0 +1,8 @@
+"","greenyellow....QSVZbyPSVZ_Morizur_FC5___"
+"1","APLP1"
+"2","ARHGEF4"
+"3","GAA"
+"4","IL11RA"
+"5","ILVBL"
+"6","PLD2"
+"7","TNFAIP2"

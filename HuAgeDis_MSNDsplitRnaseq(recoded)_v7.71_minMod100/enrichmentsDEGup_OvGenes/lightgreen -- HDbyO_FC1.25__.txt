@@ -1,0 +1,8 @@
+"","lightgreen....HDbyO_FC1.25__"
+"1","CD34"
+"2","CXCL1"
+"3","LTBR"
+"4","RAMP2"
+"5","SLCO4A1"
+"6","SMAD6"
+"7","TINAGL1"

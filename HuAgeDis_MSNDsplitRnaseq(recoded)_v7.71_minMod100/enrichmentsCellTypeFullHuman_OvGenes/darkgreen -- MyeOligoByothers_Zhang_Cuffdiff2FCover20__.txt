@@ -1,0 +1,8 @@
+"","darkgreen....MyeOligoByothers_Zhang_Cuffdiff2FCover20__"
+"1","LHPP"
+"2","PEX5L"
+"3","PPP1R16B"
+"4","SEC14L5"
+"5","SLC24A2"
+"6","STMN4"
+"7","SYNJ2"

@@ -1,0 +1,6 @@
+"","royalblue....PNSCbyQNSC_Ben_FC5___"
+"1","ATP1A2"
+"2","BMP7"
+"3","CHST7"
+"4","EDNRB"
+"5","PTPRZ1"

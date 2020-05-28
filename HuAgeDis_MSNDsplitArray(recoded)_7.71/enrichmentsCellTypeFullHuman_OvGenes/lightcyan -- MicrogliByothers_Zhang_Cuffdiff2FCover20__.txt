@@ -1,0 +1,8 @@
+"","lightcyan....MicrogliByothers_Zhang_Cuffdiff2FCover20__"
+"1","ALOX15"
+"2","ATP2C1"
+"3","FKBP4"
+"4","HSPA1A"
+"5","PCBD1"
+"6","PLOD1"
+"7","TPM1"

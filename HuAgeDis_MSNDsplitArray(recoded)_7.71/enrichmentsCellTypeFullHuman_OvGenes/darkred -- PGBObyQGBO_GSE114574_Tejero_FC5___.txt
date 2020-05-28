@@ -1,0 +1,7 @@
+"","darkred....PGBObyQGBO_GSE114574_Tejero_FC5___"
+"1","POLR2L"
+"2","PSMB1"
+"3","PSMB7"
+"4","QDPR"
+"5","RANBP9"
+"6","SNTA1"

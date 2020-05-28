@@ -1,0 +1,8 @@
+"","lightgreen....MonoByMicro_Zhang_Cuffdiff2FCover20__"
+"1","AFF3"
+"2","ATP2A3"
+"3","PIP5K1B"
+"4","SCN9A"
+"5","SDC1"
+"6","SLC2A6"
+"7","ST3GAL1"

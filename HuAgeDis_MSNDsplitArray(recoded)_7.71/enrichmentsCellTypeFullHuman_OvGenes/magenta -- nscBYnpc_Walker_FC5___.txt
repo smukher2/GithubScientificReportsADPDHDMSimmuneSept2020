@@ -1,0 +1,4 @@
+"","magenta....nscBYnpc_Walker_FC5___"
+"1","GAS6"
+"2","SH3BP1"
+"3","SOX15"

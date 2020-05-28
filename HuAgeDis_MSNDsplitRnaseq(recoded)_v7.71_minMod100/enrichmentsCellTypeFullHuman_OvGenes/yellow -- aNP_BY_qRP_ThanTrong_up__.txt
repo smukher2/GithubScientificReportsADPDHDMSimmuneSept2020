@@ -1,0 +1,8 @@
+"","yellow....aNP_BY_qRP_ThanTrong_up__"
+"1","BBS12"
+"2","CFAP99"
+"3","HTR6"
+"4","ISLR2"
+"5","MYB"
+"6","RASGRP2"
+"7","WDR66"

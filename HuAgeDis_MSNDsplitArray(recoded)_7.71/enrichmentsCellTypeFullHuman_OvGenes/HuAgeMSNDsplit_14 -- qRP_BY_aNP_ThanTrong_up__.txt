@@ -1,0 +1,6 @@
+"","HuAgeMSNDsplit_14....qRP_BY_aNP_ThanTrong_up__"
+"1","ID1"
+"2","PECAM1"
+"3","PTCH2"
+"4","TNFSF10"
+"5","TRAM2"

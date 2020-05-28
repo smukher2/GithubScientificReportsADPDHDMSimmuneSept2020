@@ -1,0 +1,5 @@
+"","salmon....MicrogliByothers_Zhang_Cuffdiff2FCover20__"
+"1","FYCO1"
+"2","GNE"
+"3","RCBTB2"
+"4","SP110"

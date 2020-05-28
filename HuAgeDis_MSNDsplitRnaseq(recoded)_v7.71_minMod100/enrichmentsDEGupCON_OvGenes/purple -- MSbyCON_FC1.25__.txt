@@ -1,0 +1,6 @@
+"","purple....MSbyCON_FC1.25__"
+"1","ACOT7"
+"2","CDKN3"
+"3","GNB1L"
+"4","HPRT1"
+"5","RBM3"

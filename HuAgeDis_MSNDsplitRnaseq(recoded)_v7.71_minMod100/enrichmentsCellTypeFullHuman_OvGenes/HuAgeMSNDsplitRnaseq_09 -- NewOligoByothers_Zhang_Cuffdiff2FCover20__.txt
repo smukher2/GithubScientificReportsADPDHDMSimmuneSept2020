@@ -1,0 +1,7 @@
+"","HuAgeMSNDsplitRnaseq_09....NewOligoByothers_Zhang_Cuffdiff2FCover20__"
+"1","CASR"
+"2","CYB5B"
+"3","FKBP3"
+"4","IRF2"
+"5","NFYC"
+"6","SLC22A23"

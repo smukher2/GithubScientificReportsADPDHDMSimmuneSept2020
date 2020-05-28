@@ -1,0 +1,6 @@
+"","purple....ADbyCON_FC1.25__"
+"1","ABCA1"
+"2","FAM107A"
+"3","GJA1"
+"4","MICA"
+"5","TXNIP"

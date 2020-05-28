@@ -1,0 +1,6 @@
+"","tan....PGBObyQGBO_GSE114574_Tejero_FC5___"
+"1","GDAP1"
+"2","GNAQ"
+"3","GPR176"
+"4","PTP4A1"
+"5","RAP2A"

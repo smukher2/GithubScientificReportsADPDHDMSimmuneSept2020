@@ -1,0 +1,8 @@
+"","greenyellow....aRG_BY_qRG_ThanTrong_up__"
+"1","CDCA8"
+"2","DDX11"
+"3","MYCN"
+"4","PCNA"
+"5","PRIMPOL"
+"6","TRIP13"
+"7","ZWILCH"

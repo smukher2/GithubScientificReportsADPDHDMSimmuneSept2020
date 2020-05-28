@@ -1,0 +1,7 @@
+"","green....PGBCbyQGBC_Aulestia_FC5___"
+"1","BIN1"
+"2","CDKN1C"
+"3","CYP27A1"
+"4","CYP4F11"
+"5","ITGAX"
+"6","RARRES1"

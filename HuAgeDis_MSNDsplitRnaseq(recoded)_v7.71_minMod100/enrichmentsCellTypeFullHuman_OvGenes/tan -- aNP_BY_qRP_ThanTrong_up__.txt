@@ -1,0 +1,6 @@
+"","tan....aNP_BY_qRP_ThanTrong_up__"
+"1","ID3"
+"2","KLF3"
+"3","MMP9"
+"4","SIK1"
+"5","SIK1B"

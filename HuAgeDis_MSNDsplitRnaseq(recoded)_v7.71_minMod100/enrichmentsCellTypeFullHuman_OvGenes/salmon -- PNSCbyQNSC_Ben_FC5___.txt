@@ -1,0 +1,7 @@
+"","salmon....PNSCbyQNSC_Ben_FC5___"
+"1","ABCC12"
+"2","CLSPN"
+"3","ITGA9"
+"4","KCNG1"
+"5","SLIT2"
+"6","TBC1D30"

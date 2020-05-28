@@ -1,0 +1,7 @@
+"","purple....MonoByMicro_Zhang_Cuffdiff2FCover20__"
+"1","P2RY1"
+"2","RFX2"
+"3","RYR3"
+"4","SNTB1"
+"5","SRPX2"
+"6","TRPS1"

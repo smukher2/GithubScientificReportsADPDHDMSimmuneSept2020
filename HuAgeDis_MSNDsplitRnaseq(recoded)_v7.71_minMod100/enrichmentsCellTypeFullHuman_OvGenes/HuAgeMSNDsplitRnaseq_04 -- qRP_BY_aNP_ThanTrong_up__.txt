@@ -1,0 +1,8 @@
+"","HuAgeMSNDsplitRnaseq_04....qRP_BY_aNP_ThanTrong_up__"
+"1","CHP2"
+"2","CRIP3"
+"3","CRYM"
+"4","DAPK1"
+"5","EML1"
+"6","PROS1"
+"7","TMEM179"

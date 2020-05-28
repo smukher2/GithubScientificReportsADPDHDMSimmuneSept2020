@@ -1,0 +1,5 @@
+"","salmon....MicroByMacro_Zhang_Cuffdiff2FCover20__"
+"1","CADM1"
+"2","CDH11"
+"3","MEGF11"
+"4","SLC24A3"

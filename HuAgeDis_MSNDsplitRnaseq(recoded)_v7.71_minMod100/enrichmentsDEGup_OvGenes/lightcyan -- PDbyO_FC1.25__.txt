@@ -1,0 +1,8 @@
+"","lightcyan....PDbyO_FC1.25__"
+"1","ATP8A2"
+"2","CACNA2D3"
+"3","GABRB1"
+"4","LSAMP"
+"5","RGS7"
+"6","SSSCA1"
+"7","ST6GALNAC5"

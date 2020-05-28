@@ -1,0 +1,236 @@
+---
+title: "script2_merging_HuAgeDis_MSNDsplit_v1"
+author: "Shradha Mukherjee"
+date: "Last updated January, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. Html_fragmented is quicker to load than html, hence for this pipeline which genenerated a large mount of data, we have used html_fragment to report Rmarkdown.
+
+#Checklist for this pipeline 
+  #1) GEO series number from publication or searching GEO for dataset of interest, here GSE=GSE33000_to_GSE43490. And their respective GPL gene annotation files
+  #2) metadata file made by manually combining individual metadata files from GEO to give '(original)merge_GSE33000_GSE20333_GSE26927_GSE20164_GSE20292_GSE108000_GSE43490_metadata_edit_v4' which was further edited manually to give '(manual)merge_GSE33000_to_GSE43490_metadata_edit_v5_HuAgeMSNDsplit.csv' 
+  #3) The present analysis was done on MacOS, using knitToHtmlfragment.
+  
+To reuse this code for other datasets 
+  a) replace 1) and 2) input files above with equivalent files for the dataset
+  b) in this pipeline human gene symbols are used
+
+####################################Merging GSE33000_GSE20333_GSE26927_GSE20164_GSE20292_GSE108000_GSE43490####################################### 
+
+###Step5A: Load required libraries , setting working directory and Import data###
+```{r}
+#save working directory location
+wd<-getwd()
+wd
+```
+
+```{r}
+#Install packages by uncommenting two lines below if packages not already installed before
+#source("https://bioconductor.org/biocLite.R")
+#biocLite(c("tidyr","dplyr"))
+library(dplyr) # used for general data wrangling
+library(tidyr) # used for tidying tables
+library(expss)
+```
+
+```{r}
+#handling NAs https://rstudio-pubs-static.s3.amazonaws.com/73936_a22f365dbd584bbf883ed60c540ac736.html
+#https://rdrr.io/cran/expss/man/if_na.html
+GSE33000Expr=read.csv("GSE33000_Annotation_Expr_GeneHu.csv", header =T, sep=',', na.strings = c("", "NA"))
+GSE33000Expr=GSE33000Expr %>% na.omit()
+
+GSE20333Expr=read.csv("GSE20333_Annotation_Expr_GeneHu.csv", header =T, sep=',', na.strings = c("", "NA"))
+GSE20333Expr=GSE20333Expr %>% na.omit()
+
+GSE26927Expr=read.csv("GSE26927_Annotation_Expr_GeneHu.csv", header =T, sep=',', na.strings = c("", "NA"))
+GSE26927Expr=GSE26927Expr %>% na.omit()
+
+GSE20164Expr=read.csv("GSE20164_Annotation_Expr_GeneHu.csv", header =T, sep=',', na.strings = c("", "NA"))
+GSE20164Expr=GSE20164Expr %>% na.omit()
+
+GSE20292Expr=read.csv("GSE20292_Annotation_Expr_GeneHu.csv", header =T, sep=',', na.strings = c("", "NA"))
+GSE20292Expr=GSE20292Expr %>% na.omit()
+
+GSE108000Expr=read.csv("GSE108000_Annotation_Expr_GeneHu.csv", header =T, sep=',', na.strings = c("", "NA"))
+GSE108000Expr=GSE108000Expr %>% na.omit()
+
+#GSE43490 has several NAs so we use a slightly different approach from above and instead of na.omit we use replace with col or sample mean after we merge the datasets and remove the extra X and Y character columns
+GSE43490Expr=read.csv("GSE43490_Annotation_Expr_GeneHu.csv", header =T, sep=',')
+```
+
+```{r}
+DT::datatable(GSE33000Expr[1:7,1:7])
+```
+
+```{r}
+DT::datatable(GSE20333Expr[1:7,1:7])
+```
+
+```{r}
+DT::datatable(GSE26927Expr[1:7,1:7])
+```
+
+```{r}
+DT::datatable(GSE20164Expr[1:7,1:7])
+```
+
+```{r}
+DT::datatable(GSE20292Expr[1:7,1:7])
+```
+
+```{r}
+DT::datatable(GSE108000Expr[1:7,1:7])
+```
+
+```{r}
+DT::datatable(GSE43490Expr[1:7,1:7])
+```
+
+```{r}
+dim(GSE33000Expr)
+dim(GSE20333Expr)
+dim(GSE26927Expr)
+dim(GSE20164Expr)
+dim(GSE20292Expr)
+dim(GSE108000Expr)
+dim(GSE43490Expr)
+```
+
+###Step5B: merge datasets ###
+
+```{r}
+#Rename the last column name of both datasets to same 'GeneHu'
+colnames(GSE33000Expr)[colnames(GSE33000Expr)=='ORF']='GeneHu'
+colnames(GSE20333Expr)[colnames(GSE20333Expr)=='gene_symbol']='GeneHu'
+
+colnames(GSE26927Expr)[colnames(GSE26927Expr)=='SYMBOL']='GeneHu'
+colnames(GSE20164Expr)[colnames(GSE20164Expr)=='gene_symbol']='GeneHu'
+
+colnames(GSE20292Expr)[colnames(GSE20292Expr)=='gene_symbol']='GeneHu'
+colnames(GSE108000Expr)[colnames(GSE108000Expr)=='GENE_SYMBOL']='GeneHu'
+
+colnames(GSE43490Expr)[colnames(GSE43490Expr)=='GENE_SYMBOL']='GeneHu'
+```
+
+```{r}
+mergeExpr1=merge(GSE33000Expr,GSE20333Expr, by='GeneHu')
+mergeExpr2=merge(GSE26927Expr,GSE20164Expr, by='GeneHu')
+mergeExpr3=merge(mergeExpr1,mergeExpr2, by='GeneHu')
+
+mergeExpr4=merge(GSE20292Expr,GSE108000Expr, by='GeneHu')
+
+mergeExpr5=merge(mergeExpr3,mergeExpr4, by='GeneHu')
+
+#keep all ids that merged in atleast other datasets even if not in GSE43490
+mergeExpr=merge(mergeExpr5,GSE43490Expr, by='GeneHu', all.x=TRUE)
+
+dim(mergeExpr)
+dim(GSE33000Expr)
+dim(GSE20333Expr)
+dim(GSE26927Expr)
+dim(GSE20164Expr)
+dim(GSE20292Expr)
+dim(GSE108000Expr)
+dim(GSE43490Expr)
+```
+
+```{r}
+#Except one ID column and one gene column, remove other non-sample annotation columns. 
+#Here can GSE33000 ID column and gene column to save. Since in microarray probe IDs are unique genes are not unique. We save gene columns and will remove duplicates later
+#may check colnames using colnames(mergeExpr)
+#mergeExpr=mergeExpr[-c(2,3,628,629)]
+mergeExpr=mergeExpr[!names(mergeExpr) %in% c("X.x.x", "ID.x.x", "X.y.x", "ID.y.x", "X.x.y", "ID.x.y", "X.y.y", "ID.y.y", "X.x", "ID.x", "X.y","ID.y", "X", "ID")]
+dim(mergeExpr)
+#make sure there are no more X and Y ids
+colnames(mergeExpr)
+```
+  
+###Step5C: Matching GSM or SRR number and replacing Sample_Names of choice from merged metadata (same order as merging of expression data above)###
+#Also incuded is a match column step in this code to ensure match
+#Before importing the metadate file, decide and include a column of sample names of your liking and the Study or batch information column you have. 
+#The individual_metadata.csv to make merged '(original)merge_GSE33000_GSE20333_GSE26927_GSE20164_GSE20292_GSE108000_GSE43490_metadata_edit_v4'
+```{r}
+merge_metadata=read.csv('./InputMetadata&Lists/(manual)merge_GSE33000_to_GSE43490_metadata_edit_v5_HuAgeMSNDsplit.csv', header =T, sep=',')
+DT::datatable(head(merge_metadata))
+```
+
+```{r}
+#Number of rows of above metadata is same as number of columns of Expr data +1 for GeneHu 
+dim(mergeExpr)
+dim(merge_metadata)
+```
+
+```{r}
+#Replace of column names in expression with sample names
+colnames(mergeExpr) <- merge_metadata$Sample_Name[match(colnames(mergeExpr), merge_metadata$GEO_Accession)]
+colnames(mergeExpr)[1]<-"GeneHu"
+
+```
+
+```{r}
+#Lets drop the GEO accession number from the metadata now
+#merge_metadata=merge_metadata[,-c(1)] #to drop column by number
+merge_metadata <- merge_metadata[!names(merge_metadata) %in% c("GEO_Accession")]
+DT::datatable(head(merge_metadata))
+```
+
+```{r}
+#Make genes row name
+mergeExpr_1=as.data.frame(mergeExpr)
+#rownames cannot be duplicate so remove duplicate genes
+mergeExpr_2=mergeExpr_1[!duplicated(mergeExpr_1$GeneHu),]
+dim(mergeExpr)
+dim(mergeExpr_1)
+dim(mergeExpr_2)
+#We lost Gene IDs for duplicate genes
+```
+
+```{r}
+mergeExpr_3=mergeExpr_2[,-1]#remove gene column and make it rowname
+rownames(mergeExpr_3)=mergeExpr_2$GeneHu
+```
+
+```{r}
+#Now we adjust the NAs coming from GSE43490 by replacing NAs with column mean. This way we retain the genes and do not lose genes because of this one dataset 
+if_na(mergeExpr_3)=t(mean_col(mergeExpr_3))
+mergeExpr=mergeExpr_3
+```
+
+```{r}
+#Now we make the same order of sample names in both expression data and metadata
+Ordered_merge_metadata=merge_metadata[order(merge_metadata$Sample_Name),]
+Ordered_merge_metadata[1:3,1:3]
+
+Ordered_mergeExpr=mergeExpr[ ,order(names(mergeExpr))]
+Ordered_mergeExpr[1:3,1:3]
+
+colnames(Ordered_mergeExpr)==Ordered_merge_metadata$Sample_Name
+#This should be all TRUE 
+```
+
+```{r}
+mergeExpr=Ordered_mergeExpr
+merge_metadata=Ordered_merge_metadata
+colnames(mergeExpr)==merge_metadata$Sample_Name
+#This should be all TRUE 
+```
+
+###Step5D: we can export the Expression data and Metadata with Sample_Name can be used for SVA, DEG and WGCNA analysis###
+```{r}
+#here tpmlog for RNA-seq or lumilog for microarray is being exported similarly cpm, tpm, rpkm, cpmlog and rpkmlog can also be exported for ENA-seq
+write.csv(mergeExpr,"Step5D_result_merge_GSE33000_to_GSE43490_Expr_Gene_SampleID.csv")
+write.csv(merge_metadata,"Step5D_result_merge_GSE33000_to_GSE43490_metadata_SampleID.csv")
+```
+
+```{r}
+#The files we needed are saved so we now clear workspace and delete files and folders that are not needed 
+save.image(file="preSVA_Merging.RData")
+rm(list=ls())
+gc()
+``` 

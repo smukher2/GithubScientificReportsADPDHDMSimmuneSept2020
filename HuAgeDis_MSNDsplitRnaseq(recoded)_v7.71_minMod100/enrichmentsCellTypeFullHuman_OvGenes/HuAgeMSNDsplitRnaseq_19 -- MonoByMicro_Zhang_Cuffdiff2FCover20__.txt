@@ -1,0 +1,5 @@
+"","HuAgeMSNDsplitRnaseq_19....MonoByMicro_Zhang_Cuffdiff2FCover20__"
+"1","ANKMY1"
+"2","FAM78B"
+"3","SELP"
+"4","SERPINB8"

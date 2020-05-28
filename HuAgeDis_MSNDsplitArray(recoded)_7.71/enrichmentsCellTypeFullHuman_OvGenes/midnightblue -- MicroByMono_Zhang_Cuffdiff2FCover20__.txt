@@ -1,0 +1,8 @@
+"","midnightblue....MicroByMono_Zhang_Cuffdiff2FCover20__"
+"1","ADRB1"
+"2","EGR1"
+"3","EGR2"
+"4","ETV5"
+"5","HSPB3"
+"6","SLC17A7"
+"7","STX1A"

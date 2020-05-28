@@ -1,0 +1,6 @@
+"","HuAgeMSNDsplitRnaseq_09....qRP_BY_aNP_ThanTrong_up__"
+"1","AK5"
+"2","SGK3"
+"3","SMIM14"
+"4","SRGAP2B"
+"5","SRGAP2C"

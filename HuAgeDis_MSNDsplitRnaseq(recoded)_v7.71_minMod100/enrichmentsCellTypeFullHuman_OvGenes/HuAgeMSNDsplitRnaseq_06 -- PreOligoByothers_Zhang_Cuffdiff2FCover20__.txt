@@ -1,0 +1,6 @@
+"","HuAgeMSNDsplitRnaseq_06....PreOligoByothers_Zhang_Cuffdiff2FCover20__"
+"1","MAP3K1"
+"2","MYBL1"
+"3","TCF3"
+"4","TMEM255B"
+"5","TMPO"

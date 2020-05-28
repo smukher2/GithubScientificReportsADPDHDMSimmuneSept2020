@@ -1,0 +1,7 @@
+"","cyan....PNSCbyQNSC_Ben_FC5___"
+"1","EMCN"
+"2","IFRD2"
+"3","ITGB1BP2"
+"4","KCNMA1"
+"5","PRKCH"
+"6","PTPRB"

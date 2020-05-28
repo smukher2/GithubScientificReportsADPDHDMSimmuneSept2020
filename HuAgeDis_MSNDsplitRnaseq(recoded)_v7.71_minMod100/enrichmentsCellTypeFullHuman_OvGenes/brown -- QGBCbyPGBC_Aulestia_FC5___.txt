@@ -1,0 +1,6 @@
+"","brown....QGBCbyPGBC_Aulestia_FC5___"
+"1","DEGS2"
+"2","MIR23A"
+"3","MIR27A"
+"4","MT3"
+"5","VGF"

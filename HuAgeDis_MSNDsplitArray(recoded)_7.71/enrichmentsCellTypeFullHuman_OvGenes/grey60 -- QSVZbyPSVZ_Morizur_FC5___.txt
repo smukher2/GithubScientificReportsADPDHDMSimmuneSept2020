@@ -1,0 +1,8 @@
+"","grey60....QSVZbyPSVZ_Morizur_FC5___"
+"1","AQP4"
+"2","ASAH1"
+"3","CREG1"
+"4","CRIM1"
+"5","ECE1"
+"6","NKTR"
+"7","SCAMP1"
