@@ -15,7 +15,7 @@ Address correspondence to: Shradha Mukherjee, PhD; Alias Goldy; Garland Avenue, 
 Shradha Mukherjee, PhD in Biochemistry,                                                                                                                                       
 MS in Chemistry, MAS in Health Informatics 
 
-Resume Link https://github.com/smukher2/Shradha_Mukherjee_Resume                                                                                      
+CV/Resume Link https://github.com/smukher2/Shradha_Mukherjee_Resume                                                                                      
 Researchgate Link https://www.researchgate.net/profile/Shradha_Mukherjee                                                         
 Github Link https://github.com/smukher2                                                                                                                                       
 Pubmed Link https://www.ncbi.nlm.nih.gov/pubmed/?term=Shradha+Mukherjee   
