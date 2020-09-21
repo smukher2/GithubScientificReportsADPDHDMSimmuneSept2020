@@ -2,7 +2,7 @@
 
 ## This github repository is made open access in hope that it will enable researchers replicate and/or adapt it for their work. So if you use or adapt the results, inferences and computational pipelines presented here, I will be grateful if you please help by citing it as follows. 
 
-# Please help by citing this article and methods as follows (two citations): 
+# Please help by citing this article and methods as follows (one citation): 
 ### Mukherjee, S. Immune signature genes are enriched in shared gene networks associated with neurological disorders: Multiple Sclerosis (MS), Alzheimer’s disease (AD), Parkinson’s disease (PD) and Huntington’s disease (HD). J Neurosci. (2020 submitted). (put doi link here)
 
 
