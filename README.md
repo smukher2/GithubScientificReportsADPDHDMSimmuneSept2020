@@ -23,37 +23,33 @@ Youtube Channel Link https://www.youtube.com/user/smukher2/playlists
 
 
 # Protocol: Organization of folders containing subfolders, files and codes. 
-
-**Step1 RNAseqASUcyverseClusterResultsScript/ 
-
-Contains representative or sample code for analysis of RNA-seq data from mouse and human. The starting file to run these codes is fastq/bam files to produce htseq counts rest of the DEG and WGCNA pipelines. 
  
-**Step2 DEG_NoCuff_CellTypeBrainImmune(notStemCells)/ 
+**Step1 DEG_NoCuff_CellTypeBrainImmune(notStemCells)/ 
 
 Contains the codes, input files and results for entire analysis of a select cell types vs other cell types differential gene expression analysis with 3 methods (Limma, edgeR and simple comparison of means) starting from htseq count files. The htseq count files were obtained in Step1 above.
 The minimum files, folders and .Rmd codes required to reproduce the results are provided. After downloading these if the user runs the .Rmd codes in RStudio using command 'knit to html' or 'Run all' it should reproduce same results. 
   
-**Step3 HuAgeDis_MSNDsplitArray(recoded)_7.71/ 
+**Step2 HuAgeDis_MSNDsplitArray(recoded)_7.71/ 
 
 Contains the codes, input files and results for WGCNA analysis of gene expression array files. Also contains code for characterization of modules with enrichR such as GO analysis;  
 The minimum files, folders and .Rmd codes required to reproduce the results are provided. After downloading these if the user runs the .Rmd codes in RStudio using command 'knit to html' or 'Run all' it should reproduce same results. 
 
-**Step4 HuAgeDis_MSNDsplitRnaseq(recoded)_v7.71_minMod100/ 
+**Step3 HuAgeDis_MSNDsplitRnaseq(recoded)_v7.71_minMod100/ 
 
 Contains the codes, input files and results for WGCNA analysis of htseq files obtained in Step1 above. Also contains code for characterization of modules with enrichR such as GO analysis;
 The minimum files, folders and .Rmd codes required to reproduce the results are provided. After downloading these if the user runs the .Rmd codes in RStudio using command 'knit to html' or 'Run all' it should reproduce same results. 
 
-**Step5 HuAgeDis_MSNDsplit_Array_Rnaseq_Preservation_minMod100(bw)/ 
+**Step4 HuAgeDis_MSNDsplit_Array_Rnaseq_Preservation_minMod100(bw)/ 
 
 Contains the codes, input files and results for comparison of gene expression array WGCNA analysis and RNA-seq WGCNA analysis outputs obtained in Step3 and Step4 above. Black and white figures are generated for preservation. 
 The minimum files, folders and .Rmd codes required to reproduce the results are provided. After downloading these if the user runs the .Rmd codes in RStudio using command 'knit to html' or 'Run all' it should reproduce same results. 
 
-**Step6 HuAgeDis_MSNDsplit_Array_Rnaseq_Preservation_minMod100(color)/ 
+**Step5 HuAgeDis_MSNDsplit_Array_Rnaseq_Preservation_minMod100(color)/ 
 
 Contains the codes, input files and results for comparison of gene expression array WGCNA analysis and RNA-seq WGCNA analysis outputs obtained in Step3 and Step4 above. Color figures are generated for preservation. 
 The minimum files, folders and .Rmd codes required to reproduce the results are provided. After downloading these if the user runs the .Rmd codes in RStudio using command 'knit to html' or 'Run all' it should reproduce same results. 
 
-**Step7 HuAgeDis_MSNDsplit_Array_Rnaseq_Preservation_minMod100(red)/ 
+**Step6 HuAgeDis_MSNDsplit_Array_Rnaseq_Preservation_minMod100(red)/ 
 
 Contains the codes, input files and results for comparison of gene expression array WGCNA analysis and RNA-seq WGCNA analysis outputs obtained in Step3 and Step4 above. Red figures are generated for preservation. 
 The minimum files, folders and .Rmd codes required to reproduce the results are provided. After downloading these if the user runs the .Rmd codes in RStudio using command 'knit to html' or 'Run all' it should reproduce same results. 
