@@ -1,9 +1,9 @@
-# GithubJournalOfNeuroscience2020
+# GithubScientificReports2020
 
 ## This github repository is made open access in hope that it will enable researchers replicate and/or adapt it for their work. So if you use or adapt the results, inferences and computational pipelines presented here, I will be grateful if you please help by citing it as follows. 
 
 # Please help by citing this article and methods as follows (one citation): 
-### Mukherjee, S. Immune signature genes are enriched in shared gene networks associated with neurological disorders: Multiple Sclerosis (MS), Alzheimer’s disease (AD), Parkinson’s disease (PD) and Huntington’s disease (HD). J Neurosci. (2020 submitted). (put doi link here)
+### Mukherjee, S. Immune signature genes are enriched in shared gene networks associated with neurological disorders: Multiple Sclerosis (MS), Alzheimer’s disease (AD), Parkinson’s disease (PD) and Huntington’s disease (HD). Scientific Reports (2020 submitted). (put doi link here)
 
 
 
@@ -77,8 +77,7 @@ BiocManager::install(c("name_of_package1","name_of_package2"))
 2) WGCNA: Dr. Jeremy Miller https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/JMiller/
 3) WGCNA Preservation: Dr. Steve Horvath and Dr. Peter Langfelder https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/ModulePreservation/Tutorials/MiniTutorial-MouseLiver.pdf
 4) WGCNA Hub Genes: Dr. Steve Horvath and Dr. Peter Langfelder https://pdfs.semanticscholar.org/5e42/e2185c54874277794395e5825808e5f5709c.pdf
-5) MEGENA: Dr. Won-Min Song and Dr. Bin Zhang https://rdrr.io/github/songw01/MEGENA/f/vignettes/MEGENA_pipeline_02202020.Rmd
-6) edgeR: https://github.com/smukher2/StemCells_RNAseq_Expression_edgeR_visualization_GO and https://web.stanford.edu/class/bios221/labs/rnaseq/lab_4_rnaseq.html
-7) limma: https://kasperdanielhansen.github.io/genbioconductor/html/limma.html and https://ucdavis-bioinformatics-training.github.io/2018-June-RNA-Seq-Workshop/thursday/DE.html
+5) edgeR: https://github.com/smukher2/StemCells_RNAseq_Expression_edgeR_visualization_GO and https://web.stanford.edu/class/bios221/labs/rnaseq/lab_4_rnaseq.html
+6) limma: https://kasperdanielhansen.github.io/genbioconductor/html/limma.html and https://ucdavis-bioinformatics-training.github.io/2018-June-RNA-Seq-Workshop/thursday/DE.html
 
-Users new to SVA, WGCNA, MEGENA and Differential Gene Expression methods are encouraged to refer to the above mentioned turotials and pipelines. Other acknowledgements have been added to the best of our knowledge as #comment in the code/pipeline itself. 
+Users new to SVA, MEGENA and Differential Gene Expression methods are encouraged to refer to the above mentioned turotials and pipelines. Other acknowledgements have been added to the best of our knowledge as #comment in the code/pipeline itself. 
