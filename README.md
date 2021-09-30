@@ -1,15 +1,14 @@
-# GithubScientificReports2020
+# GithubSubmittedADPDHDMSimmuneSept2021
 
 ## This github repository is made open access in hope that it will enable researchers replicate and/or adapt it for their work. So if you use or adapt the results, inferences and computational pipelines presented here, I will be grateful if you please help by citing it as follows. 
 
 # Please help by citing this article and methods as follows (one citation): 
-### Mukherjee, S. Immune gene network of neurological diseases: Multiple Sclerosis (MS), Alzheimer’s disease (AD), Parkinson’s disease (PD) and Huntington’s disease (HD). Scientific Reports (2021 accepted). (put doi link here)
-
+### Mukherjee, S. Immune gene network of neurological diseases: Multiple Sclerosis (MS), Alzheimer’s disease (AD), Parkinson’s disease (PD) and Huntington’s disease (HD). (Submitted) Github link https://github.com/smukher2/
 
 
 # Author Information
 Shradha Mukherjee*#
-Address correspondence to: Shradha Mukherjee, PhD; Alias Goldy; Garland Avenue, Downtown Los Angeles, Los Angeles, CA 90017, U.S. Email: smukher2@gmail.com
+Address correspondence to: Shradha Mukherjee, PhD; Garland Avenue, Downtown Los Angeles, Los Angeles, CA 90017, U.S. Email: smukher2@gmail.com
 * First author and # Corresponding author
 
 Shradha Mukherjee, PhD in Biochemistry,                                                                                                                                       
@@ -19,7 +18,6 @@ CV/Resume Link https://github.com/smukher2/Shradha_Mukherjee_Resume
 Researchgate Link https://www.researchgate.net/profile/Shradha_Mukherjee                                                         
 Github Link https://github.com/smukher2                                                                                                                                       
 Pubmed Link https://www.ncbi.nlm.nih.gov/pubmed/?term=Shradha+Mukherjee   
-Youtube Channel Link https://www.youtube.com/user/smukher2/playlists
 
 
 # Protocol: Organization of folders containing subfolders, files and codes. 
