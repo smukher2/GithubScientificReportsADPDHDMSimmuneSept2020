@@ -3,7 +3,7 @@
 ## This github repository is made open access in hope that it will enable researchers replicate and/or adapt it for their work. So if you use or adapt the results, inferences and computational pipelines presented here, I will be grateful if you please help by citing it as follows. 
 
 # Please help by citing this article and methods as follows (one citation): 
-### Mukherjee, S. Immune gene network of neurological diseases: Multiple Sclerosis (MS), Alzheimer’s disease (AD), Parkinson’s disease (PD) and Huntington’s disease (HD). (Submitted) Github link https://github.com/smukher2/
+### Mukherjee S*† (2021). Immune gene network of neurological diseases: Multiple Sclerosis (MS), Alzheimer’s disease (AD), Parkinson’s disease (PD) and Huntington’s disease (HD). Heliyon (In Press, Accepted Manuscript). https://doi.org/10.1016/j.heliyon.2021.e08518 (Independent research).
 
 
 # Author Information
